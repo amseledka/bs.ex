@@ -1,0 +1,439 @@
+html {
+  background: #141414;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding-bottom: 160px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto;
+  width: 1080px;
+}
+
+.header > .row {
+  align-items: center;
+  display: flex;
+}
+
+.header .logo {
+  color: #FFFFFF;
+  font-family: SourceSansPro-Black;
+  font-size: 20px;
+  letter-spacing: -0.45px;
+  margin-right: 20px;
+}
+
+.header .dropdown-toggle {
+  color: #FFFFFF;
+  font-family: SourceCodePro-Regular;
+  font-size: 12px;
+  letter-spacing: -0.27px;
+  margin-right: 20px;
+}
+
+.header-nav-menu > a {
+  color: #FFFFFF;
+  font-family: SourceSansPro-Bold;
+  font-size: 14px;
+  letter-spacing: -0.32px;
+  padding: 11px 20px;
+  text-decoration: none;
+}
+
+.header .login-link {
+  border: 2px solid #282828;
+  border-radius: 4px 0 0 4px;
+  color: #FFFFFF;
+  font-family: SourceSansPro-Bold;
+  font-size: 14px;
+  margin-left: 20px;
+  padding: 9px 15px;
+  text-decoration: none;
+}
+
+.header .signup-link {
+  background: #505050;
+  border-radius: 0 4px 4px 0;
+  color: #FFFFFF;
+  font-family: SourceSansPro-Bold;
+  font-size: 14px;
+  padding: 11px 15px;
+  text-decoration: none;
+}
+
+.main-heading {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #F0F0F0;
+  letter-spacing: 0;
+  line-height: 45px;
+  margin: 50px auto 70px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 526px;
+}
+
+.assets-stats-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  width: 1080px;
+}
+
+.asset-stats-block {
+  background: #1C1C1C;
+  border: 1px solid #282828;
+  box-shadow: 0 3px 6px 1px rgba(0,0,0,0.50), inset 0 3px 6px 0 rgba(0,0,0,0.20);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  width: 334px;
+}
+
+.asset-stats-block:hover {
+  background-image: linear-gradient(-180deg, rgba(80,200,240,0.00) 0%, rgba(80,200,240,0.20) 100%);
+  border: 1px solid rgba(80,200,240,0.50);
+  box-shadow: 0 2px 6px 2px rgba(80,200,240,0.10), inset 0 2px 4px 0 rgba(0,0,0,0.20);
+}
+
+.asset-stats-block > .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.asset-stats-block > .row > .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.asset-stats-block > .row > .col.align-right {
+  text-align: right;
+}
+
+.asset-stats-block h3 {
+  color: #F0F0F0;
+  font-family: SourceSansPro-Regular;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.asset-stats-block h3 i {
+  margin-right: 5px;
+}
+
+.asset-stats-block h4 {
+  color: #A0A0A0;
+  font-family: SourceSansPro-Regular;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.asset-stats-block h4.raised-amount {
+  color: #286478;
+}
+
+.asset-stats-block .percent-raised {
+  color: #50C8F0;
+  font-family: SourceSansPro-Bold;
+  font-size: 16px;
+}
+
+.asset-stats-block .cap,
+.asset-stats-block .price {
+  color: #F0F0F0;
+  font-family: SourceCodePro-Bold;
+  font-size: 16px;
+}
+
+.asset-stats-block .date {
+  color: #FFFFFF;
+  font-family: SourceCodePro-Regular;
+  font-size: 12px;
+  letter-spacing: -0.27px;
+}
+
+.asset-stats-block > .raised-amount-filling {
+  background: rgba(40,100,120,0.50);
+  border-top: 2px solid #286478;
+  bottom: 0;
+  height: 40px;
+  left: 0;
+  opacity: 0.33;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.asset-stats-table {
+  border: 1px solid #282828;
+  border-radius: 4px 4px 0 0;
+  margin: 30px auto;
+  width: 1080px;
+}
+
+.asset-stats-table thead {
+  background: #242424;
+}
+
+.asset-stats-table th {
+  color: #A0A0A0;
+  font-family: SourceSansPro-Bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 12px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.asset-stats-table tbody {
+  background: #1C1C1C;
+}
+
+.asset-stats-table td {
+  border-top: 1px solid #282828;
+  color: #F0F0F0;
+  font-family: SourceSansPro-Regular;
+  font-size: 12px;
+  padding: 12px;
+}
+
+.asset-stats-table .highlighted-heading {
+  color: #FFFFFF;
+}
+
+.asset-stats-table .align-right {
+  text-align: right;
+}
+
+.asset-stats-table .asset-abbr {
+  font-family: SourceSansPro-ExtraLight;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.asset-stats-table .asset-name {
+  font-family: SourceSansPro-Bold;
+  font-size: 14px;
+  min-width: 320px;
+}
+
+.asset-stats-table .asset-category {
+  font-family: SourceSansPro-Regular;
+  font-size: 12px;
+  min-width: 150px;
+}
+
+.asset-stats-table .asset-token-price,
+.asset-stats-table .asset-round-cap,
+.asset-stats-table .asset-raised-amount
+ {
+  font-family: SourceCodePro-Bold;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: -0.27px;
+}
+
+.asset-stats-table .asset-start-date,
+.asset-stats-table .asset-end-date {
+  font-family: SourceCodePro-Regular;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: -0.27px;
+}
+
+.landing-partners {
+  margin: 50px auto;
+  text-align: center;
+  width: 650px;
+}
+
+.landing-partners > h3 {
+  color: #F0F0F0;
+  font-family: SourceSansPro-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.landing-partners > .partners-logos {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.landing-partners > .partners-logos > .cubits-logo {
+  height: 100%;
+  width: 143px;
+}
+
+.landing-partners > .partners-logos > .ambisafe-logo {
+  height: 100%;
+  width: 159px;
+}
+
+.landing-partners > .partners-logos > .otonomos-logo {
+  height: 100%;
+  width: 154px;
+}
+
+.footer {
+  background: #1c1c1c;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.footer > .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+  margin: 0 auto;
+  width: 1080px;
+}
+
+.footer-inner > .col {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.footer-inner > .footer-info-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 300px;
+}
+
+.footer-info-links > .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info-links a {
+  color: #FFFFFF;
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+  letter-spacing: -0.32px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.footer-mailto-link {
+  color: #F0F0F0;
+  font-family: SourceSansPro-Regular;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-social-links > a {
+  border: 2px solid #787878;
+  border-radius: 4px;
+  color: #8D8D8D;
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-social-links > a:hover {
+  color: #FFFFFF;
+}
+
+.footer-social-links > .twitter {
+  font-size: 22px;
+  padding: 5px 8px;
+}
+
+.footer-social-links > .instagram {
+  font-size: 22px;
+  padding: 5px 9px;
+}
+
+.footer-social-links > .facebook {
+  font-size: 22px;
+  padding: 5px 12px;
+}
+
+.footer-social-links > .vk {
+  font-size: 22px;
+  padding: 5px 6px;
+}
+
+.footer-social-links > .telegram {
+  font-size: 22px;
+  padding: 5px 8px;
+}
+
+.footer-copyrigh-info {
+  color: #FFFFFF;
+  font-family: SourceSansPro-Regular;
+  font-size: 8px;
+}
+
+.footer-inner > .footer-subscribtion {
+  justify-content: flex-start;
+}
+
+.footer-subscribe-form {
+  display: flex;
+}
+
+.footer-subscribtion p {
+  color: #FFFFFF;
+  font-family: SourceSansPro-Regular;
+  font-size: 12px;
+  margin: 0 0 30px 0;
+}
+
+.footer-subscribe-form input {
+  background: #000000;
+  border: 2px solid #282828;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  color: #FFFFFF;
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+  padding: 9px;
+  outline: none;
+  width: 230px;
+}
+
+.footer-subscribe-form input::placeholder {
+  color: #4E4E4E;
+}
+
+.footer-subscribe-form .submit-button {
+  background: #505050;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: #FFFFFF;
+  font-family: SourceSansPro-Bold;
+  font-size: 14px;
+  padding: 9px 20px;
+}
