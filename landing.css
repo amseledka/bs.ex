@@ -423,10 +423,15 @@ body {
 
 .footer-inner > .footer-subscribtion {
   justify-content: flex-start;
+  order: -1;
 }
 
 .footer-subscribe-form {
   display: flex;
+}
+
+.footer-social-copyright {
+  order: -2;
 }
 
 .footer-subscribtion p {

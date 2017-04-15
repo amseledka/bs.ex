@@ -4,32 +4,22 @@
   }
 
   .header {
-    flex-direction: column;
-    width: 100%;
+    position: static;
   }
 
-  .header > .row {
-    flex-wrap: wrap;
+  .header-inner {
+    justify-content: space-between;
+    margin: 10px;
+    width: calc(100vw - 20px);
   }
 
-  .header .logo {
-    margin-left: 20px;
-  }
-
-  .header-nav-menu {
-    margin: 15px 3px;
-  }
-  .header-nav-menu > a {
-    margin: 10px 0;
-  }
-
-  .main-heading {
-    padding: 0 10px;
-    width: 100%;
+  .header-inner > .menu-toggle {
+    color: #FFFFFF;
   }
 
   .assets-stats-section {
     flex-direction: column;
+    margin: 10px auto;
     padding: 15px;
     width: 100%;
   }
