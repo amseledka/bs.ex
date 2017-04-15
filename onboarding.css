@@ -1,0 +1,134 @@
+.onboarding {
+  background: #333333;
+  padding-bottom: 0;
+}
+
+.onboarding-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.onboarding-block {
+  background: #1C1C1C;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.50);
+  border-radius: 4px;
+  padding: 30px 40px;
+  text-align: center;
+  width: 333px;
+}
+
+.onboarding-links {
+  margin-bottom: 25px;
+}
+
+.onboarding-links > a {
+  color: #FFFFFF;
+  font-family: SourceSansPro-Regular;
+  font-size: 20px;
+  opacity: 0.5;
+  padding: 0 5px 7px;
+  text-decoration: none;
+}
+
+.onboarding-links > a:hover,
+.onboarding-links > a.active {
+  border-bottom: 1px #FFFFFF solid;
+  opacity: 1;
+}
+
+.onboarding-links > span {
+  color: #787878;
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+  letter-spacing: -0.31px;
+  margin: 0 15px;
+}
+
+.onboarding-form {
+  text-align: left;
+}
+
+.onboarding-form > .input-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.onboarding-form > .input-block label {
+  color: #787878;
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.onboarding-form > .input-block input {
+  background: #000000;
+  border: 2px solid #282828;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-family: SourceSansPro-Regular;
+  font-size: 14px;
+  outline: none;
+  padding: 10px;
+}
+
+.onboarding-form > .input-block input:focus {
+  border-color: #787878;
+}
+
+.onboarding-form > .input-block.input-error input {
+  border-color: #FA4646;
+  margin-bottom: 5px;
+}
+
+.onboarding-form > .input-block.input-error .error-message {
+  font-family: SourceSansPro-Regular;
+  font-size: 12px;
+  color: #FA4646;
+  letter-spacing: 0;
+}
+
+.onboarding-form > .user-agreement-checkbox {
+  color: #8D8D8D;
+  font-family: SourceSansPro-Bold;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.onboarding-form > .submit-button {
+  background: #505050;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-family: SourceSansPro-Bold;
+  font-size: 14px;
+  margin: 10px auto;
+  padding: 11px;
+  width: 100%;
+}
+
+.onboarding-form > .submit-button:hover {
+  background: #787878;
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.40), 0 2px 1px 0 rgba(0,0,0,0.60), 0 3px 3px 1px rgba(0,0,0,0.10);
+}
+
+.onboarding-help-block {
+  color: #8D8D8D;
+  font-family: SourceSansPro-Regular;
+  font-size: 12px;
+}
+
+.onboarding-help-block a {
+  color: #8D8D8D;
+  font-family: SourceSansPro-Bold;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.onboarding-help-block a:hover,
+.onboarding-help-block a.signup-link {
+  color: #FFFFFF;
+}

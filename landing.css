@@ -1,5 +1,4 @@
 html {
-  background: linear-gradient(#141414, #000000);
   box-sizing: border-box;
 }
 
@@ -10,21 +9,34 @@ html {
 }
 
 body {
-  position: relative;
+  background: linear-gradient(#141414, #000000);
+  font-family: SourceSansPro-Regular, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   min-height: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
   padding-bottom: 160px;
+  position: relative;
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.header.scrolled-header {
+  background: #242424;
+  z-index: 99;
+}
+
+.header-inner {
   display: flex;
   justify-content: space-between;
-  margin: 15px auto;
+  margin: 10px auto;
   width: 1080px;
 }
 
-.header > .row {
+.header-inner > .row {
   align-items: center;
   display: flex;
 }
@@ -37,12 +49,18 @@ body {
   margin-right: 20px;
 }
 
+.header .header-dropdown {
+  background: #060606;
+  border-radius: 2px;
+  display: flex;
+}
+
 .header .dropdown-toggle {
   color: #FFFFFF;
   font-family: SourceCodePro-Regular;
   font-size: 12px;
   letter-spacing: -0.27px;
-  margin-right: 20px;
+  margin: 5px 10px;
 }
 
 .header-nav-menu > a {
@@ -443,73 +461,4 @@ body {
   font-family: SourceSansPro-Bold;
   font-size: 14px;
   padding: 9px 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  body {
-    padding-bottom: 452px;
-  }
-
-  .header {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .header > .row {
-    flex-wrap: wrap;
-  }
-
-  .header .logo {
-    margin-left: 20px;
-  }
-
-  .header-nav-menu {
-    margin: 15px 3px;
-  }
-  .header-nav-menu > a {
-    margin: 10px 0;
-  }
-
-  .main-heading {
-    padding: 0 10px;
-    width: 100%;
-  }
-
-  .assets-stats-section {
-    flex-direction: column;
-    padding: 15px;
-    width: 100%;
-  }
-
-  .asset-stats-block {
-    margin-bottom: 20px;
-    width: 100%;
-  }
-
-  .landing-partners {
-    width: 100%;
-  }
-
-  .landing-partners > .partners-logos {
-    flex-direction: column;
-  }
-
-  .landing-partners > .partners-logos img {
-    margin-bottom: 20px;
-  }
-
-  .footer > .footer-inner {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
-    width: 100%;
-  }
-
-  .footer-inner > .footer-info-links {
-    width: 100%;
-  }
-
-  .footer-social-links {
-    margin: 20px auto;
-  }
 }
