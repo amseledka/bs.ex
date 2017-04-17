@@ -1,6 +1,6 @@
 @media only screen and (max-width: 768px) {
   body {
-    padding-bottom: 452px;
+    padding-bottom: 552px;
   }
 
   .header {
@@ -29,7 +29,79 @@
     width: 100%;
   }
 
+  .asset-stats-table {
+    border: none;
+    margin: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .asset-stats-table .table-title-row {
+    border-top: 1px solid #282828;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .asset-stats-table .row {
+    align-items: center;
+    display: flex;
+  }
+
+  .asset-stats-table .main-row {
+    justify-content: space-between;
+    border-bottom: 1px solid #282828;
+    border-left: 1px solid #282828;
+    border-right: 1px solid #282828;
+  } 
+
+  .asset-stats-table .expanded-rows {
+    background: #333333;
+    border: 1px solid rgba(80,200,240,0.50);
+  }
+
+  .asset-stats-table .expanded-rows .main-row {
+    border-bottom-color: #414141;
+    border-left: none;
+    border-right: none;
+  }
+
+  .asset-stats-table .start-trading-button {
+    background: #787878;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.40), 0 2px 1px 0 rgba(0,0,0,0.60), 0 3px 3px 1px rgba(0,0,0,0.10);
+    border-radius: 4px;
+    color: #FFFFFF;
+    display: block;
+    font-family: SourceSansPro-Bold;
+    font-size: 14px;
+    margin: 5px auto 10px;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 150px;
+  }
+
+  .asset-stats-table .asset-name {
+    width: 100%;
+  }
+
+  .asset-stats-table .column-title {
+    padding: 10px;
+  }
+
+  .asset-stats-table .column-data {
+    border-top: none;
+    padding: 10px;
+  }
+
+  .asset-stats-table .asset-icon {
+    padding-right: 0;
+  }
+
+  .asset-stats-table .asset-category {
+    width: auto;
+  }
+
   .landing-partners {
+    margin: 35px auto;
     width: 100%;
   }
 
@@ -44,15 +116,55 @@
   .footer > .footer-inner {
     flex-direction: column;
     height: auto;
-    padding: 15px;
+    padding: 0 15px;
     width: 100%;
   }
 
-  .footer-inner > .footer-info-links {
+  .footer-info-links {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 45px;
     width: 100%;
+  }
+
+  .footer-info-links .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .footer-info-links .col {
+    align-items: center;
+    width: 50%;
+  }
+
+  .footer-info-links a {
+    margin-bottom: 35px;
   }
 
   .footer-social-links {
-    margin: 20px auto;
+    margin: 35px auto 15px;
+  }
+
+  .footer-social-links > a {
+    margin: 0 5px;
+  }
+
+  .footer-copyrigh-info {
+    text-align: center;
+  }
+
+  .footer-inner > .footer-subscribtion {
+    margin-top: 25px;
+  }
+
+  .footer-subscribtion p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-subscribe-form input {
+    min-width: 150px;
+    max-width: calc(65vw - 30px);
   }
 }
