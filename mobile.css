@@ -20,7 +20,7 @@
   .assets-stats-section {
     flex-direction: column;
     margin: 10px auto;
-    padding: 15px;
+    padding: 10px;
     width: 100%;
   }
 
@@ -34,6 +34,13 @@
     background: #1C1C1C;
     margin: 15px;
     width: calc(100% - 30px);
+  }
+
+  .asset-stats-table i.fa-angle-down {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    position: absolute;
+    right: 0;
   }
 
   .asset-stats-table .table-title-row {
@@ -51,7 +58,9 @@
     border-bottom: 1px solid #282828;
     border-left: 1px solid #282828;
     border-right: 1px solid #282828;
-  } 
+    padding-right: 15px;
+    position: relative;
+  }
 
   .asset-stats-table .expanded-rows {
     background: #333333;
