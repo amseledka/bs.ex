@@ -31,6 +31,7 @@
 
   .asset-stats-table {
     border: none;
+    background: #1C1C1C;
     margin: 15px;
     width: calc(100% - 30px);
   }
