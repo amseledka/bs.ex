@@ -222,6 +222,52 @@ a {
   width: 1080px;
 }
 
+.asset-stats-table th:nth-child(1),
+.asset-stats-table td:nth-child(1) {
+  width: 2%;
+  padding: 0;
+}
+
+.asset-stats-table th:nth-child(2),
+.asset-stats-table td:nth-child(2) {
+  width: 5%;
+}
+
+.asset-stats-table th:nth-child(3),
+.asset-stats-table td:nth-child(3) {
+  width: 26%;
+}
+
+.asset-stats-table th:nth-child(4),
+.asset-stats-table td:nth-child(4) {
+  width: 14%;
+}
+
+.asset-stats-table th:nth-child(5),
+.asset-stats-table td:nth-child(5) {
+  width: 10%;
+}
+
+.asset-stats-table th:nth-child(6),
+.asset-stats-table td:nth-child(6) {
+  width: 12%;
+}
+
+.asset-stats-table th:nth-child(7),
+.asset-stats-table td:nth-child(7) {
+  width: 9%;
+}
+
+.asset-stats-table th:nth-child(8),
+.asset-stats-table td:nth-child(8) {
+  width: 11%;
+}
+
+.asset-stats-table th:nth-child(9),
+.asset-stats-table td:nth-child(9) {
+  width: 11%;
+}
+
 .asset-stats-table tr,
 .asset-stats-table .table-title-row tr:hover {
   background: #1C1C1C;
@@ -236,7 +282,7 @@ a {
   font-family: SourceSansPro-Bold;
   font-size: 12px;
   letter-spacing: 1px;
-  padding: 12px;
+  padding: 10px;
   text-align: left;
   text-transform: uppercase;
 }
@@ -256,7 +302,7 @@ a {
   color: #F0F0F0;
   font-family: SourceSansPro-Regular;
   font-size: 12px;
-  padding: 12px;
+  padding: 12px 10px;
 }
 
 .asset-stats-table .highlighted-heading {
@@ -282,13 +328,11 @@ a {
 .asset-stats-table .asset-name {
   font-family: SourceSansPro-Bold;
   font-size: 14px;
-  width: 30%;
 }
 
 .asset-stats-table .asset-category {
   font-family: SourceSansPro-Regular;
   font-size: 12px;
-  width: 14%;
 }
 
 .asset-stats-table .asset-token-price,
