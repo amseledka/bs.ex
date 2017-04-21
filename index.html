@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="css/onboarding.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
   <title>Orderbook Home Page</title>
@@ -34,8 +36,8 @@
           <a href="">Support</a>
         </nav>
 
-        <a href="login.html" class="login-link">Log In</a>
-        <a href="signup.html" class="signup-link">Sign Up</a>
+        <a href="#login-modal" class="login-link" data-toggle="modal">Log In</a>
+        <a href="#signup-modal" class="signup-link" data-toggle="modal">Sign Up</a>
       </div>
     </div>
   </header>
@@ -322,6 +324,76 @@
     </section>
   </div>
 
+  <div class="modal fade onboarding-modal" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="onboarding-block">
+        <div class="onboarding-links">
+          <a href="#login-modal" class="active" data-toggle="modal" data-dismiss="modal">Log In</a>
+          <span>or</span>
+          <a href="#signup-modal" data-toggle="modal" data-dismiss="modal">Sign Up</a>
+        </div>
+
+        <form method="get" accept-charset="utf-8" class="onboarding-form">
+          <div class="input-block">
+            <label>Email</label>
+            <input placeholder="Enter your email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label>Password</label>
+            <input placeholder="Enter your passwrord" type="password" required>
+          </div>
+          <button type="submit" class="submit-button">Log In</button>
+        </form>
+
+        <div class="onboarding-help-block">
+          <p><a href="">Forgot password?</a></p>
+          <p>
+            Don't have an account?
+            <a href="#signup-modal" class="signup-link" data-toggle="modal" data-dismiss="modal">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade onboarding-modal" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="onboarding-block">
+        <div class="onboarding-links">
+          <a href="#login-modal" data-toggle="modal" data-dismiss="modal">Log In</a>
+          <span>or</span>
+          <a href="#signup-modal" class="active" data-toggle="modal" data-dismiss="modal">Sign Up</a>
+        </div>
+
+        <form method="get" accept-charset="utf-8" class="onboarding-form">
+          <div class="input-block">
+            <label>Email</label>
+            <input placeholder="Enter your email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label>Password</label>
+            <input placeholder="Enter your passwrord" type="password" required>
+          </div>
+          <div class="input-block input-error">
+            <label>Password Confirmation</label>
+            <input placeholder="Enter your passwrord again" type="password" required>
+            <span class="error-message">Passwords doesn’t match each other</span>
+          </div>
+          <div class="user-agreement-checkbox">
+            <input type="checkbox" name="user_agreement" value="true" checked>
+            User Agreement
+          </div>
+          <button type="submit" class="submit-button">Sign Up</button>
+        </form>
+
+        <div class="onboarding-help-block">
+          Already have an account?
+          <a href="#login-modal" data-toggle="modal" data-dismiss="modal">Log In</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-info-links">
@@ -360,16 +432,28 @@
     </div>
   </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
 <script>
 // Class on scroll
 window.onscroll = function changeClass(){
   var header = document.querySelector('.header');
   var positionY = window.pageYOffset | document.body.scrollTop;
+  var table = document.querySelector('.asset-stats-table');
+  var tablePositionY = table.offsetTop;
 
   if (positionY > 50) {
     header.classList.add('scrolled-header');
   } else {
     header.classList.remove('scrolled-header');
+  }
+
+
+  if (positionY > (tablePositionY - 55)) {
+    table.classList.add('scrolled-table');
+  } else {
+    table.classList.remove('scrolled-table');
   }
 }
 </script>

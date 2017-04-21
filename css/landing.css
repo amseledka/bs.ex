@@ -17,6 +17,10 @@ body {
   position: relative;
 }
 
+a {
+  outline: none;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -304,6 +308,26 @@ body {
   color: #FFFFFF;
   letter-spacing: -0.27px;
 }
+
+.asset-stats-table.scrolled-table {
+  padding-top: 40px;
+}
+
+.asset-stats-table.scrolled-table .table-title-row {
+  left: 0;
+  position: fixed;
+  top: 60px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.asset-stats-table.scrolled-table .table-title-row tr {
+  background: #242424;
+  display: flex;
+  margin: 0 auto;
+  width: 1080px;
+}
+
 
 .landing-partners {
   margin: 50px auto;
