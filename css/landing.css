@@ -54,13 +54,13 @@ a {
   margin-bottom: -15px;
 }
 
-.header .header-dropdown {
+.header-dropdown {
   background: #060606;
   border-radius: 2px;
   display: flex;
 }
 
-.header .dropdown-toggle {
+.header-dropdown .dropdown-toggle {
   color: #FFFFFF;
   font-family: SourceCodePro-Regular;
   font-size: 12px;

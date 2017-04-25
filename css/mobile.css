@@ -17,6 +17,36 @@
     color: #FFFFFF;
   }
 
+  .mobile-navbar-menu {
+    background: #242424;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.75);
+    height: 400px;
+  }
+
+  .mobile-navbar-menu .close,
+  .mobile-navbar-menu .close:hover,
+  .mobile-navbar-menu .close:focus {
+    color: #F0F0F0;
+    opacity: 1;
+  }
+
+  .mobile-navbar-menu .modal-inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-navbar-menu .header-nav-menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 30px;
+  }
+
+  .mobile-navbar-menu .login-link {
+    margin-left: 0;
+  }
+
   .assets-stats-section {
     flex-direction: column;
     margin: 10px auto;
@@ -36,11 +66,22 @@
     width: calc(100% - 20px);
   }
 
-  .asset-stats-table i.fa-angle-down {
+  .asset-stats-table i.fa-angle-down,
+  .asset-stats-table i.fa-angle-up {
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
     position: absolute;
     right: 0;
+  }
+
+  .asset-stats-table .collapsed i.fa-angle-down + i.fa-angle-up,
+  .asset-stats-table i.fa-angle-down {
+    display: none;
+  }
+
+  .asset-stats-table i.fa-angle-down + i.fa-angle-up,
+  .asset-stats-table .collapsed i.fa-angle-down {
+    display: inherit;
   }
 
   .asset-stats-table .table-title-row {
@@ -63,16 +104,29 @@
     text-decoration: none;
   }
 
+  .asset-stats-table .collapse-toggle-row:not(.collapsed) {
+    background: #333333;
+    border: 1px solid rgba(80,200,240,0.50);
+    border-bottom: none;
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.20);
+  }
+
   .asset-stats-table .details-rows {
     background: #333333;
     border: 1px solid rgba(80,200,240,0.50);
-    box-shadow: 0 2px 6px 2px rgba(80,200,240,0.10), inset 0 2px 4px 0 rgba(0,0,0,0.20);
+    border-top: none;
+    box-shadow: 0 2px 6px 2px rgba(80,200,240,0.10);
   }
 
   .asset-stats-table .details-rows .main-row {
     border-bottom-color: #414141;
     border-left: none;
     border-right: none;
+    
+  }
+
+  .asset-stats-table .details-rows .main-row:first-child {
+    border-top: 1px solid #414141;
   }
 
   .asset-stats-table .start-trading-button {

@@ -15,9 +15,42 @@
   <header class="header">
     <div class="header-inner">
       <div class="logo"><img src="images/orderbook-logo.svg" alt=""></div>
-      <a href="" class="menu-toggle"><i class="fa fa-bars"></i></a>
+      <a href="#mobile-navbar-menu-modal" class="menu-toggle" data-toggle='modal'><i class="fa fa-bars"></i></a>
+    </div>
+
+    <div id="mobile-navbar-menu-modal" class="mobile-navbar-menu modal fade">
+      <div class="modal-dialog" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-inner">
+          <div class="header-dropdown">
+            <div class="dropdown-toggle">
+              En <i class="fa fa-angle-down"></i>
+            </div>
+            <div class="dropdown-toggle">
+              USD <i class="fa fa-angle-down"></i>
+            </div>
+          </div>
+
+          <nav class="header-nav-menu">
+            <a href="">Assets</a>
+            <a href="">ICO News</a>
+            <a href="">API</a>
+            <a href="">FAQ</a>
+            <a href="">Terms & Legals</a>
+            <a href="">Support</a>
+          </nav>
+
+          <div class="row">
+            <a href="#login-modal" class="login-link" data-toggle="modal">Log In</a
+            ><a href="#signup-modal" class="signup-link" data-toggle="modal">Sign Up</a>
+          </div>
+
+        </div>
+      </div>
     </div>
   </header>
+
+  
 
   <section class="assets-stats-section">
     <div class="asset-stats-block">
@@ -120,7 +153,7 @@
       <span class="column-title highlighted-heading"><i class="fa fa-caret-down"></i>Raised</span>
     </div>
 
-    <a href="#deatils-row-1" class="row main-row" data-toggle="collapse" aria-expanded="false">
+    <a href="#deatils-row-1" class="row main-row collapse-toggle-row collapsed" data-toggle="collapse" aria-expanded="false">
       <div class="row">
         <div class="column-data asset-icon"><img src="images/sample-icon.png" alt=""></div>
         <div class="column-data asset-name">Mainstreet Invstment</div>
@@ -128,6 +161,7 @@
       <div class="row">
         <span class="column-data asset-raised-amount align-right">49%</span>
         <i class="fa fa-angle-down"></i>
+        <i class="fa fa-angle-up"></i>
       </div>
     </a>
 
@@ -159,7 +193,7 @@
       <a href="" class="start-trading-button">Start Trading</a>
     </div>
 
-    <a href="#deatils-row-2" class="row main-row" data-toggle="collapse" aria-expanded="false">
+    <a href="#deatils-row-2" class="row main-row collapse-toggle-row collapsed" data-toggle="collapse" aria-expanded="false">
       <div class="row">
         <div class="column-data asset-icon"><img src="images/sample-icon.png" alt=""></div>
         <div class="column-data asset-name">Mainstreet Invstment</div>
@@ -167,6 +201,7 @@
       <div class="row">
         <span class="column-data asset-raised-amount align-right">49%</span>
         <i class="fa fa-angle-down"></i>
+        <i class="fa fa-angle-up"></i>
       </div>
     </a>
 
@@ -198,7 +233,7 @@
       <a href="" class="start-trading-button">Start Trading</a>
     </div>
 
-    <a href="#deatils-row-3" class="row main-row" data-toggle="collapse" aria-expanded="false">
+    <a href="#deatils-row-3" class="row main-row collapse-toggle-row collapsed" data-toggle="collapse" aria-expanded="false">
       <div class="row">
         <div class="column-data asset-icon"><img src="images/sample-icon.png" alt=""></div>
         <div class="column-data asset-name">Mainstreet Invstment</div>
@@ -206,6 +241,7 @@
       <div class="row">
         <span class="column-data asset-raised-amount align-right">49%</span>
         <i class="fa fa-angle-down"></i>
+        <i class="fa fa-angle-up"></i>
       </div>
     </a>
 
