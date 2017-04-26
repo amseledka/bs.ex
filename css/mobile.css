@@ -28,6 +28,7 @@
   .mobile-navbar-menu .close:focus {
     color: #F0F0F0;
     opacity: 1;
+    text-shadow: none;
   }
 
   .mobile-navbar-menu .modal-inner {
